@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Raúl Rodrigues — Página Pessoal</title>
+    <meta name="description" content="Página pessoal com apresentação, projetos e contactos." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="#top">rr</a>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero container">
+        <h1>Olá, eu sou o <span class="accent">Raúl</span>.</h1>
+        <p class="lead">
+          Estudante de Engenharia Informática. Gosto de construir soluções limpas e automatizar deploys com CI/CD.
+        </p>
+        <div class="cta">
+          <a class="btn" href="mailto:teu.email@example.com">Falar comigo</a>
+          <a class="btn ghost" href="https://github.com/teu-username" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section id="sobre" class="section container">
+        <h2>Sobre</h2>
+        <p>
+          Esta é uma página estática (HTML/CSS) pensada para ser deployada automaticamente no
+          <strong>GitHub Pages</strong> através de <strong>GitHub Actions</strong>. Edita o texto para te apresentar,
+          lista as tuas competências e liga a projetos reais.
+        </p>
+        <ul class="tags">
+          <li>Java</li><li>Spring Boot</li><li>Docker</li><li>CI/CD</li><li>GitHub Actions</li>
+        </ul>
+      </section>
+
+      <!-- Projetos -->
+      <section id="projetos" class="section container">
+        <h2>Projetos</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Open Badges</h3>
+            <p>Sistema de gestão de badges para gamificação de soft skills, com integração em carteiras digitais.</p>
+            <a class="link" href="#" aria-disabled="true">Ver repositório</a>
+          </article>
+
+          <article class="card">
+            <h3>AR Puzzle</h3>
+            <p>Jogo em AR onde o utilizador encontra letras para completar frases. Exportado para Android.</p>
+            <a class="link" href="#" aria-disabled="true">Ver repositório</a>
+          </article>
+
+          <article class="card">
+            <h3>API Wallet</h3>
+            <p>API de carteira digital com autenticação via JWT, logging/auditoria e testes automatizados.</p>
+            <a class="link" href="#" aria-disabled="true">Ver repositório</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contactos -->
+      <section id="contactos" class="section container">
+        <h2>Contactos</h2>
+        <p>Queres falar sobre um projeto ou colaboração?</p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:teu.email@example.com">teu.email@example.com</a></li>
+          <li>GitHub: <a href="https://github.com/teu-username" target="_blank" rel="noopener">@teu-username</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/teu-username" target="_blank" rel="noopener">/in/teu-username</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container small">
+        © <span id="year"></span> Raúl Rodrigues · Feito com HTML &amp; CSS · Deploy via GitHub Pages
+      </div>
+      <script>
+        // opcional: atualiza o ano automaticamente
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>
